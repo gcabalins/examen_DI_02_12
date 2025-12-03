@@ -1,0 +1,19 @@
+<section aria-labelledby="titulo-home">
+  <h2 id="titulo-home" class="page-title">Pokémon Registrados</h2>
+
+  <div class="poke-grid">
+    <% pokemons.forEach(p => { %>
+      <article class="poke-card">
+        <a href="/pokemon/<%= p.id %>" class="poke-card-link">
+          <figure class="poke-figure">
+            <img src="<%= p.imagen %>" alt="<%= p.nombre %>" loading="lazy" width="260" height="260">
+          </figure>
+          <div class="poke-info">
+            <p class="poke-number"><%= p.numero %></p>
+            <h3 class="poke-name"><%= p.nombre %></h3>
+          </div>
+        </a>
+      </article>
+    <% }) %>
+  </div>
+</section>

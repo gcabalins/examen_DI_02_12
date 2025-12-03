@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title><%= post.title %> | RetroBlog</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>RetroBlog</h1>
+      <p>Un blog para amantes del retro</p>
+    </div>
+
+    <nav>
+      <ul>
+        <% categorias.forEach(cat => { %>
+          <li><a href="/categoria/<%= cat %>"><%= cat %></a></li>
+        <% }) %>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor detalle">
+    <article>
+      <img src="<%= post.image %>" alt="<%= post.title %>">
+      <h1><%= post.title %></h1>
+      <p class="intro"><%= post.intro %></p>
+
+      <!-- Importante: mostrar el contenido HTML del JSON -->
+      <div class="contenido">
+        <%- post.content %>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>Created by Francisco Romero</p>
+  </footer>
+</body>
+</html>

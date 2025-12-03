@@ -1,0 +1,53 @@
+.site-header .hero {
+  background-image: url('https://images.pexels.com/photos/7708409/pexels-photo-7708409.jpeg');
+  background-size: 160%;
+  background-position: center;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hero-inner {
+  padding: 30px;
+  text-align: center;
+  gap: 10px;
+}
+
+.site-title {
+  color: #fff;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.site-subtitle {
+  color: #e5e7eb;
+  font-size: 2rem;
+}
+
+.main-nav {
+  background: var(--blue);
+  color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: .9rem;
+  justify-content: center
+}
+
+.nav-list a {
+  color: #e5e7eb;
+}
+
+.nav-list a:hover,
+.nav-list a.is-active {
+  color: #ffffff;
+  font-weight: bold;
+}

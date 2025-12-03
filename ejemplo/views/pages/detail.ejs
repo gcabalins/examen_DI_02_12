@@ -1,0 +1,19 @@
+<article class="poke-detail">
+  <header class="poke-detail-header">
+    <h2 class="detail-name"><%= pokemon.nombre %></h2>
+    <p class="detail-number"><%= pokemon.numero %></p>
+    <p class="detail-types"><%= pokemon.tipo.join(' · ') %></p>
+  </header>
+
+  <figure class="detail-figure">
+    <img src="<%= pokemon.imagen %>" alt="<%= pokemon.nombre %>" width="350" height="350">
+  </figure>
+
+  <section class="detail-description">
+    <%- pokemon.descripcion %>
+  </section>
+
+  <p class="detail-back">
+    <a href="/" class="detail-back-link">Volver a la PokéDex</a>
+  </p>
+</article>

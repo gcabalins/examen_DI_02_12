@@ -1,0 +1,21 @@
+<header class="site-header" role="banner">
+  <div class="hero">
+    <div class="hero-inner">
+      <h1 class="site-title">PokéDex</h1>
+      <p class="site-subtitle">Enciclopedia Pokémon Completa</p>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Tipos de Pokémon">
+    <ul class="nav-list">
+      <li>
+        <a href="/" class="<%= tipoActual === 'Todos' ? 'is-active' : '' %>">Todos</a>
+      </li>
+      <% if (tipos) { tipos.forEach(t => { %>
+        <li>
+          <a href="/tipo/<%= t %>" class="<%= tipoActual === t ? 'is-active' : '' %>"><%= t %></a>
+        </li>
+      <% }) } %>
+    </ul>
+  </nav>
+</header>
