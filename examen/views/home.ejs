@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+</head>
+<body>
+<h1>Página Principal</h1>
+
+
+<% if (user) { %>
+<p>Bienvenido, <strong><%= user.username %></strong></p>
+<a href="/logout">Cerrar Sesión</a>
+<br><br>
+<% } %>
+
+
+<a href="/vista1"><button>Ir a Vista 1</button></a>
+<a href="/vista2"><button>Ir a Vista 2</button></a>
+<a href="/login"><button>Iniciar Sesión</button></a>
+<a href="/register"><button>Registrarse</button></a>
+</body>
+</html>
